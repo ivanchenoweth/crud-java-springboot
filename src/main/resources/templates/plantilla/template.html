@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns: th="http://www.thymeleaf.org">
+</html>
+<head th:fragment="head">
+<meta charset="UTF8">
+<title>CRUD Clientes</title>
+<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+</head>
+<body>
+
+	<!--  NAV BAR -->
+	<header th:fragment="header">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container">
+			<a class="navbar-brand" href="#"><strong>My Logo</strong></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<!--  LINKS OPTIONS -->
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active"><a class="nav-link" th:href="@{/index}">Inicio
+							<span class="sr-only">(current)</span>
+					</a></li>
+					<li class="nav-item"><a class="nav-link" href="/views/clientes/">Clientes</a></li>
+					
+				</ul>
+			</div>
+			</div>
+		</nav>
+		
+	</header>
+
+	<!--  CONTENT -->
+	<div class="container"></div>
+
+	<!--  FOOTER -->
+	<footer th:fragment="footer" class="bg-dark text-center text-white fixed-bottom">
+			<p>Copyright - 2022!</p>
+		</div>
+	</footer>
+
+	<script type="text/javascript" th:src="@{js/bootstrap.min.js}"></script>
+	<script type="text/javascript" th:src="@{js/jquery-3.2.1.slim.min.js}"></script>
+	<script type="text/javascript" th:src="@{js/popper.min.js}"></script>
+</body>
+</html>
